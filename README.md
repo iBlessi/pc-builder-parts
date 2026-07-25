@@ -2,7 +2,8 @@
 
 An open, machine-readable dataset of current (2026) desktop PC components — CPUs, GPUs,
 motherboards, RAM, storage, PSUs, and cases — together with the **compatibility rules** needed to
-validate a build. It powers the free [TechFuelHQ PC Builder](https://techfuelhq.com/tools/pc-builder/),
+validate a build. It powers the free [TechFuelHQ PC Builder](https://techfuelhq.com/tools/pc-builder/) and is browsable
+by category — with per-part verification dates — at [2026 PC part prices](https://techfuelhq.com/data/pc-part-prices-2026/),
 and it's released under **CC BY 4.0** so you can fork it, build your own picker on top of it, or check
 our numbers.
 
@@ -31,11 +32,11 @@ No API, no keys — it's just data.
   "socket": "AM5",
   "ram_type": "DDR5",
   "supported_chipsets": ["X870E", "X870", "B850", "B650"],
-  "price_usd": 479,
+  "price_usd": 445,
   "performance_tier": "flagship",
   "use_cases": ["1440p gaming", "4K gaming", "competitive gaming"],
   "notes": "Best gaming CPU on the market in 2026. 3D V-Cache transforms 1% lows.",
-  "last_verified": "2026-06-09"
+  "last_verified": "2026-07-24"
 }
 ```
 
@@ -49,8 +50,11 @@ The list is deliberately curated, not exhaustive: every entry earns its place vi
 
 ## License
 
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-Use it anywhere, including commercially — just attribute:
+Copyright © 2026 TechFuel HQ — https://techfuelhq.com/
+
+Released under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+The full, canonical legal text is in the [`LICENSE`](LICENSE) file. Use it anywhere, including
+commercially — just attribute:
 
 > TechFuelHQ PC Builder Parts Dataset (CC BY 4.0). https://techfuelhq.com/tools/pc-builder/
 
