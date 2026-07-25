@@ -1,13 +1,14 @@
 {
   "_meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "published": "2026-06-09",
+    "last_price_refresh": "2026-07-24",
     "publisher": "TechFuel HQ",
     "publisher_url": "https://techfuelhq.com/",
     "license": "CC BY 4.0",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution_required": "TechFuelHQ PC Builder Parts Dataset (CC BY 4.0). https://techfuelhq.com/tools/pc-builder/",
-    "note": "2026 street prices in USD. Pulled from manufacturer pages, TechPowerUp, Tom's Hardware, and verified retailer listings (Amazon, Newegg, Micro Center). Performance tier estimates are TechFuelHQ editorial assessments based on aggregate review consensus, not first-party benchmarks (except where the part appears in a TechFuelHQ Open Bench Dataset, in which case the tier is anchored to first-party data).",
+    "note": "Street prices in USD. Prices were re-verified against live US retailer listings (primarily Amazon.com) on 2026-07-24 wherever a matching new, standalone SKU could be confirmed; parts whose exact new SKU could not be confirmed at re-verification keep their earlier last_verified date, so always check each part's last_verified field. GPU entries record a representative new add-in-board (AIB) street price for the stated chip and VRAM. Original sourcing: manufacturer pages, TechPowerUp, Tom's Hardware, and verified retailer listings (Amazon, Newegg, Micro Center). Performance tier estimates are TechFuelHQ editorial assessments based on aggregate review consensus, not first-party benchmarks (except where the part appears in a TechFuelHQ Open Bench Dataset, in which case the tier is anchored to first-party data).",
     "compatibility_rules": [
       "CPU and motherboard must share socket (AM5, LGA1851, LGA1700)",
       "Motherboard chipset must be in cpu.supported_chipsets (e.g. AM5 X870E supports Ryzen 7000+9000; B650 supports Ryzen 7000+9000 with BIOS update)",
@@ -34,11 +35,11 @@
       "socket": "AM5",
       "ram_type": "DDR5",
       "supported_chipsets": ["X870E", "X870", "B850", "B650"],
-      "price_usd": 229,
+      "price_usd": 176,
       "performance_tier": "mid",
       "use_cases": ["1080p gaming", "1440p gaming", "productivity"],
       "notes": "Best mainstream gaming CPU under $250 in 2026. Pairs well with B850 boards.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "cpu-r7-9700x",
@@ -49,11 +50,11 @@
       "socket": "AM5",
       "ram_type": "DDR5",
       "supported_chipsets": ["X870E", "X870", "B850", "B650"],
-      "price_usd": 329,
+      "price_usd": 285,
       "performance_tier": "high",
       "use_cases": ["1440p gaming", "4K gaming", "productivity", "streaming"],
       "notes": "Best sub-$350 gaming + productivity. Cooler stays quiet at 65W default; PBO unlocks more.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "cpu-r7-9800x3d",
@@ -64,11 +65,11 @@
       "socket": "AM5",
       "ram_type": "DDR5",
       "supported_chipsets": ["X870E", "X870", "B850", "B650"],
-      "price_usd": 479,
+      "price_usd": 445,
       "performance_tier": "flagship",
       "use_cases": ["1440p gaming", "4K gaming", "competitive gaming"],
       "notes": "Best gaming CPU on the market in 2026. 3D V-Cache transforms 1% lows. Get this if gaming is the only job.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "cpu-r9-9900x",
@@ -79,11 +80,11 @@
       "socket": "AM5",
       "ram_type": "DDR5",
       "supported_chipsets": ["X870E", "X870", "B850", "B650"],
-      "price_usd": 469,
+      "price_usd": 329,
       "performance_tier": "flagship",
       "use_cases": ["productivity", "video editing", "compilation", "streaming"],
       "notes": "Heavier multi-thread than the 9800X3D but worse 1% lows in games. Pick this for content work, not pure gaming.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "cpu-i5-14600k",
@@ -124,11 +125,11 @@
       "vram_gb": 16, "tgp_w": 180,
       "length_mm": 280,
       "pcie": "Gen5 x8",
-      "price_usd": 429,
+      "price_usd": 575,
       "performance_tier": "mid",
       "use_cases": ["1080p ultra", "1440p high"],
       "notes": "1440p sweet spot in 2026. 16GB VRAM future-proofs against texture growth. See TechFuelHQ 5060 Ti vs 9060 XT review.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "gpu-rx-9060-xt-16gb",
@@ -137,11 +138,11 @@
       "vram_gb": 16, "tgp_w": 150,
       "length_mm": 270,
       "pcie": "Gen5 x16",
-      "price_usd": 349,
+      "price_usd": 445,
       "performance_tier": "mid",
       "use_cases": ["1080p ultra", "1440p high"],
       "notes": "Best 1440p value in 2026 if FSR4 quality is acceptable. Lower power than the 5060 Ti.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "gpu-rtx-5070",
@@ -150,11 +151,11 @@
       "vram_gb": 12, "tgp_w": 250,
       "length_mm": 300,
       "pcie": "Gen5 x16",
-      "price_usd": 549,
+      "price_usd": 636,
       "performance_tier": "high",
       "use_cases": ["1440p ultra", "4K high"],
       "notes": "DLSS 4 + MFG makes the 12GB VRAM bearable. Watch for texture-heavy titles where 12GB hurts.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "gpu-rtx-5070-ti-16gb",
@@ -163,11 +164,11 @@
       "vram_gb": 16, "tgp_w": 300,
       "length_mm": 320,
       "pcie": "Gen5 x16",
-      "price_usd": 799,
+      "price_usd": 990,
       "performance_tier": "high",
       "use_cases": ["1440p ultra", "4K high", "VR"],
       "notes": "16GB resolves the 5070's VRAM problem. Strong 1440p flagship, capable 4K with DLSS.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "gpu-rtx-5080-fe",
@@ -189,11 +190,11 @@
       "vram_gb": 16, "tgp_w": 360,
       "length_mm": 358,
       "pcie": "Gen5 x16",
-      "price_usd": 1199,
+      "price_usd": 1844,
       "performance_tier": "flagship",
       "use_cases": ["4K ultra", "path tracing + DLSS 4 MFG", "showcase build"],
       "notes": "TechFuelHQ first-party: ~66C under stress, 400W board power, 2918 MHz manual OC. See dataset: /data/gpu/rog-astral-rtx-5080-oc-2026-06-09/. Long card \u2014 check case clearance.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     }
   ],
   "motherboard": [
@@ -205,10 +206,10 @@
       "form_factor": "ATX",
       "ram_type": "DDR5", "ram_slots": 4, "ram_max_gb": 192,
       "m2_slots": 3, "pcie_gen": "Gen4",
-      "price_usd": 209,
+      "price_usd": 176,
       "use_cases": ["budget AM5", "mid-tier AM5"],
       "notes": "Best B650 value in 2026. Solid VRMs for any Ryzen 7000/9000 short of the 9950X3D.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "mb-b850-edge",
@@ -218,10 +219,10 @@
       "form_factor": "ATX",
       "ram_type": "DDR5", "ram_slots": 4, "ram_max_gb": 256,
       "m2_slots": 4, "pcie_gen": "Gen5",
-      "price_usd": 259,
+      "price_usd": 250,
       "use_cases": ["mid-tier AM5", "high-tier AM5"],
       "notes": "PCIe 5.0 for the primary GPU slot and primary NVMe. Worth the bump from B650 if you're building 2026+ forward.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "mb-x870e-hero",
@@ -231,10 +232,10 @@
       "form_factor": "ATX",
       "ram_type": "DDR5", "ram_slots": 4, "ram_max_gb": 256,
       "m2_slots": 5, "pcie_gen": "Gen5",
-      "price_usd": 699,
+      "price_usd": 549,
       "use_cases": ["flagship AM5", "showcase build"],
       "notes": "Overkill for most builds. Pick for X3D-class CPUs, multi-NVMe storage, and aesthetic.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "mb-z890-tomahawk",
@@ -244,10 +245,10 @@
       "form_factor": "ATX",
       "ram_type": "DDR5", "ram_slots": 4, "ram_max_gb": 256,
       "m2_slots": 4, "pcie_gen": "Gen5",
-      "price_usd": 289,
+      "price_usd": 199,
       "use_cases": ["mid-tier Intel", "high-tier Intel"],
       "notes": "Solid Arrow Lake mid-range. Z890 needed for Core Ultra K-series tuning.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "mb-z790-tomahawk",
@@ -257,10 +258,10 @@
       "form_factor": "ATX",
       "ram_type": "DDR5", "ram_slots": 4, "ram_max_gb": 192,
       "m2_slots": 4, "pcie_gen": "Gen5",
-      "price_usd": 239,
+      "price_usd": 210,
       "use_cases": ["LGA1700 holdouts"],
       "notes": "Only buy LGA1700 today if the deal on a 14600K is exceptional. Platform is end-of-life.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     }
   ],
   "ram": [
@@ -271,10 +272,10 @@
       "capacity_gb": 32, "kit": "2x16GB",
       "speed_mtps": 6000, "cas_latency": 30,
       "ram_type": "DDR5",
-      "price_usd": 109,
+      "price_usd": 600,
       "use_cases": ["AM5 sweet spot", "mid-tier"],
       "notes": "Sweet spot for AM5: EXPO 6000 CL30 is the official AMD spec target. Use this for any Ryzen 7000/9000 build.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "ram-ddr5-64gb-6000",
@@ -283,10 +284,10 @@
       "capacity_gb": 64, "kit": "2x32GB",
       "speed_mtps": 6000, "cas_latency": 30,
       "ram_type": "DDR5",
-      "price_usd": 209,
+      "price_usd": 1000,
       "use_cases": ["productivity", "VMs", "content creation"],
       "notes": "64GB at 6000 CL30 is the new content-creator default. Don't go above 2 sticks on AM5 \u2014 IMC stability falls off with 4 sticks.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "ram-ddr5-32gb-7200",
@@ -310,10 +311,10 @@
       "interface": "NVMe Gen4 x4",
       "form_factor": "M.2 2280",
       "read_mbps": 7300, "write_mbps": 6600,
-      "price_usd": 159,
+      "price_usd": 350,
       "use_cases": ["OS drive", "game library", "general"],
       "notes": "Reliable Gen4 default. 2TB is the sane minimum in 2026 with 100GB+ AAA game installs.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "ssd-t705-2tb",
@@ -323,10 +324,10 @@
       "interface": "NVMe Gen5 x4",
       "form_factor": "M.2 2280",
       "read_mbps": 14500, "write_mbps": 12700,
-      "price_usd": 269,
+      "price_usd": 389,
       "use_cases": ["content creation", "DirectStorage gaming"],
       "notes": "Gen5 only matters for sequential workloads (video scrub, large file IO). For gaming, Gen4 is fine. Runs hot \u2014 needs heatsink.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "ssd-sn850x-4tb",
@@ -336,10 +337,10 @@
       "interface": "NVMe Gen4 x4",
       "form_factor": "M.2 2280",
       "read_mbps": 7300, "write_mbps": 6600,
-      "price_usd": 289,
+      "price_usd": 600,
       "use_cases": ["large game library", "content creation"],
       "notes": "Cheaper per-GB than the T705 and only marginally slower in real-world workloads. Best 4TB Gen4 pick.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     }
   ],
   "psu": [
@@ -351,10 +352,10 @@
       "form_factor": "ATX 3.1",
       "modular": "Fully modular",
       "pcie_5_connectors": 1,
-      "price_usd": 139,
+      "price_usd": 115,
       "use_cases": ["mid-tier", "single-GPU under 300W TGP"],
       "notes": "Right-size for 9700X + 5070 Ti class builds. ATX 3.1 + 12V-2x6 connector for current GPUs.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "psu-850w-gold",
@@ -364,10 +365,10 @@
       "form_factor": "ATX 3.1",
       "modular": "Fully modular",
       "pcie_5_connectors": 1,
-      "price_usd": 159,
+      "price_usd": 140,
       "use_cases": ["high-tier", "5070 Ti / 5080 class"],
       "notes": "850W gives headroom for 5080-class GPUs with transient spike margin. Default for most 2026 mid-to-high builds.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "psu-1000w-plat",
@@ -392,10 +393,10 @@
       "supports_form_factors": ["ATX", "mATX", "ITX"],
       "max_gpu_length_mm": 410,
       "max_cpu_cooler_mm": 185,
-      "price_usd": 129,
+      "price_usd": 110,
       "use_cases": ["mid-tier", "high-tier", "airflow"],
       "notes": "Best mainstream airflow case in 2026. Fits any GPU up to 410mm \u2014 including the long ROG Astral 5080.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     },
     {
       "id": "case-meshify-2",
@@ -431,10 +432,10 @@
       "supports_form_factors": ["ATX", "mATX", "ITX"],
       "max_gpu_length_mm": 422,
       "max_cpu_cooler_mm": 167,
-      "price_usd": 249,
+      "price_usd": 160,
       "use_cases": ["showcase build", "watercooling"],
       "notes": "Showcase case with the best layout for watercooling and dual-radiator setups. Premium price.",
-      "last_verified": "2026-06-09"
+      "last_verified": "2026-07-24"
     }
   ]
 }
