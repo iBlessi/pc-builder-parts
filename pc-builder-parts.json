@@ -1,13 +1,13 @@
 {
  "_meta": {
-  "version": "2.1.0",
+  "version": "2.1.1",
   "published": "2026-06-09",
   "publisher": "TechFuel HQ",
   "publisher_url": "https://techfuelhq.com/",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "attribution_required": "TechFuelHQ PC Builder Parts Dataset (CC BY 4.0). https://techfuelhq.com/tools/pc-builder/",
-  "note": "2026-08-01 (v2.1.0): all prices removed - see price_removal. The 97 expansion rows lost their fields at v2.0.0; the 29 pre-expansion rows followed the same day after review of their mixed retailer provenance. The removed figures were live Amazon.com street prices observed 2026-07-29; the rows' specifications and their 'source' specification-page URLs are unchanged and remain individually verifiable. Original expansion record: 97 parts added and one retired on 2026-07-29 (30 -> 126 parts); every added row carries a 'source' field naming the manufacturer, Newegg or B&H specification page its specs were read from; any candidate whose specs could not be confirmed against a page that was actually retrieved was dropped rather than estimated (41 candidates dropped); several vendor sites (TechPowerUp, Kingston, Crucial, MSI, Gigabyte, Zotac, PNY, AMD product pages) refused automated retrieval, so those brands are under-represented and NVIDIA add-in-board rows skew toward ASUS; PCIe lane counts are recorded only where a retrieved page stated them explicitly. Original pre-expansion sourcing: manufacturer pages, TechPowerUp, Tom's Hardware, and verified retailer listings. Performance tier estimates are TechFuelHQ editorial assessments based on aggregate review consensus, not first-party benchmarks (except where the part appears in a TechFuelHQ Open Bench Dataset, in which case the tier is anchored to first-party data).",
+  "note": "2026-09-08 correction: the ram-ddr5-32gb-6000 note now distinguishes the kit EXPO overclocking profile from stock CPU memory support. AMD Ryzen 5 9600X specifications list DDR5-5600 with two DIMMs (https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html); the exact non-RGB G.Skill kit lists EXPO and compatibility-dependent rated speed (https://www.newegg.com/g-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black/p/N82E16820374422). Both pages read September 8, 2026. 2026-08-01 (v2.1.0): all prices removed - see price_removal. The 97 expansion rows lost their fields at v2.0.0; the 29 pre-expansion rows followed the same day after review of their mixed retailer provenance. The removed figures were live Amazon.com street prices observed 2026-07-29; the rows' specifications and their 'source' specification-page URLs are unchanged and remain individually verifiable. Original expansion record: 97 parts added and one retired on 2026-07-29 (30 -> 126 parts); every added row carries a 'source' field naming the manufacturer, Newegg or B&H specification page its specs were read from; any candidate whose specs could not be confirmed against a page that was actually retrieved was dropped rather than estimated (41 candidates dropped); several vendor sites (TechPowerUp, Kingston, Crucial, MSI, Gigabyte, Zotac, PNY, AMD product pages) refused automated retrieval, so those brands are under-represented and NVIDIA add-in-board rows skew toward ASUS; PCIe lane counts are recorded only where a retrieved page stated them explicitly. Original pre-expansion sourcing: manufacturer pages, TechPowerUp, Tom's Hardware, and verified retailer listings. Performance tier estimates are TechFuelHQ editorial assessments based on aggregate review consensus, not first-party benchmarks (except where the part appears in a TechFuelHQ Open Bench Dataset, in which case the tier is anchored to first-party data). 2026-08-30: Intel K-SKU tdp_w changed from Processor Base Power to Maximum Turbo Power. The PC Builder sums tdp_w as the power the chip actually draws, and every K-SKU held the 125 W base figure, so PSU sizing ran a retail size light. Values are Intel's published MTP. Non-K Intel rows (Core Ultra 5 225/225F, 65 W base) were NOT changed - their MTP was not verified in this pass and is recorded as open rather than guessed. 2026-09-29 correction (v2.1.1): every AM5 CPU's supported_chipsets now lists all AM5 chipsets AMD names (X870E, X870, B850, B840, X670E, X670, A620, A620A, plus B650). AMD's AM5 chipset page says all Socket AM5 motherboards are compatible with all Socket AM5 processors, with a BIOS update possibly required for Ryzen 8000 and 9000 on 600-series boards (https://www.amd.com/en/products/processors/chipsets/am5.html, read 2026-09-29). The old four-chipset list made the PC Builder flag every AM5 CPU on the A620A board as incompatible.",
   "compatibility_rules": [
    "CPU and motherboard must share socket (AM5, LGA1851, LGA1700)",
    "Motherboard chipset must be in cpu.supported_chipsets (e.g. AM5 X870E supports Ryzen 7000+9000; B650 supports Ryzen 7000+9000 with BIOS update)",
@@ -46,7 +46,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "mid",
    "use_cases": [
@@ -71,7 +76,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "high",
    "use_cases": [
@@ -97,7 +107,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -122,7 +137,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -141,7 +161,7 @@
    "cores": 14,
    "threads": 20,
    "boost_ghz": 5.3,
-   "tdp_w": 125,
+   "tdp_w": 181,
    "socket": "LGA1700",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -164,7 +184,7 @@
    "cores": 20,
    "threads": 20,
    "boost_ghz": 5.5,
-   "tdp_w": 125,
+   "tdp_w": 250,
    "socket": "LGA1851",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -194,7 +214,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -221,7 +246,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -248,7 +278,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -275,7 +310,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -301,7 +341,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -319,7 +364,7 @@
    "cores": 24,
    "threads": 24,
    "boost_ghz": 5.7,
-   "tdp_w": 125,
+   "tdp_w": 250,
    "socket": "LGA1851",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -343,7 +388,7 @@
    "cores": 20,
    "threads": 20,
    "boost_ghz": 5.5,
-   "tdp_w": 125,
+   "tdp_w": 250,
    "socket": "LGA1851",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -367,7 +412,7 @@
    "cores": 14,
    "threads": 14,
    "boost_ghz": 5.2,
-   "tdp_w": 125,
+   "tdp_w": 159,
    "socket": "LGA1851",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -439,7 +484,7 @@
    "cores": 20,
    "threads": 28,
    "boost_ghz": 5.6,
-   "tdp_w": 125,
+   "tdp_w": 253,
    "socket": "LGA1700",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -463,7 +508,7 @@
    "cores": 20,
    "threads": 28,
    "boost_ghz": 5.6,
-   "tdp_w": 125,
+   "tdp_w": 253,
    "socket": "LGA1700",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -487,7 +532,7 @@
    "cores": 24,
    "threads": 32,
    "boost_ghz": 6,
-   "tdp_w": 125,
+   "tdp_w": 253,
    "socket": "LGA1700",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -511,7 +556,7 @@
    "cores": 24,
    "threads": 32,
    "boost_ghz": 6,
-   "tdp_w": 125,
+   "tdp_w": 253,
    "socket": "LGA1700",
    "ram_type": "DDR5",
    "supported_chipsets": [
@@ -542,7 +587,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -568,7 +618,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "flagship",
    "use_cases": [
@@ -594,7 +649,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "high",
    "use_cases": [
@@ -620,7 +680,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "high",
    "use_cases": [
@@ -646,7 +711,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "high",
    "use_cases": [
@@ -670,7 +740,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "mid",
    "use_cases": [
@@ -695,7 +770,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "mid",
    "use_cases": [
@@ -720,7 +800,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "mid",
    "use_cases": [
@@ -746,7 +831,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "mid",
    "use_cases": [
@@ -772,7 +862,12 @@
     "X870E",
     "X870",
     "B850",
-    "B650"
+    "B840",
+    "X670E",
+    "X670",
+    "B650",
+    "A620",
+    "A620A"
    ],
    "performance_tier": "entry",
    "use_cases": [
@@ -1576,7 +1671,7 @@
     "AM5 sweet spot",
     "mid-tier"
    ],
-   "notes": "Sweet spot for AM5: EXPO 6000 CL30 is the official AMD spec target. Use this for any Ryzen 7000/9000 build.",
+   "notes": "DDR5-6000 CL30 is the kit's EXPO overclocking profile. Stock memory settings depend on the CPU and motherboard; AMD lists DDR5-5600 for a Ryzen 5 9600X with two DIMMs. Check the board's QVL and test stability after enabling EXPO.",
    "last_verified": "2026-07-24"
   },
   {

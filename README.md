@@ -33,13 +33,29 @@ No API, no keys — it's just data.
   "cores": 8, "threads": 16,
   "socket": "AM5",
   "ram_type": "DDR5",
-  "supported_chipsets": ["X870E", "X870", "B850", "B650"],
+  "supported_chipsets": ["X870E", "X870", "B850", "B840", "X670E", "X670", "B650", "A620", "A620A"],
   "performance_tier": "flagship",
   "use_cases": ["1440p gaming", "4K gaming", "competitive gaming"],
-  "notes": "Best gaming CPU on the market in 2026. 3D V-Cache transforms 1% lows.",
+  "notes": "Best gaming CPU on the market in 2026. 3D V-Cache transforms 1% lows. Get this if gaming is the only job.",
   "last_verified": "2026-07-24"
 }
 ```
+
+## Changes in v2.1.1 (2026-09-29)
+
+Three corrections since v2.1.0. The part count is unchanged at 126, and every change is also
+recorded in `_meta.note`.
+
+- **AM5 chipset lists (2026-09-29).** Every AM5 CPU's `supported_chipsets` now lists all AM5
+  chipsets AMD names: X870E, X870, B850, B840, X670E, X670, A620, A620A and B650. AMD's AM5 chipset
+  page says all Socket AM5 motherboards are compatible with all Socket AM5 processors, with a BIOS
+  update possibly required for Ryzen 8000 and 9000 on 600-series boards. The old four-chipset list
+  made the PC Builder flag every AM5 CPU on an A620A board as incompatible.
+- **Intel K-SKU `tdp_w` (2026-08-30).** Changed from Processor Base Power to Intel's published
+  Maximum Turbo Power, because the PC Builder sums `tdp_w` as the power the chip actually draws.
+  Non-K Intel rows were not changed.
+- **`ram-ddr5-32gb-6000` note (2026-09-08).** It now separates the kit's EXPO overclocking profile
+  from the CPU's stock memory support.
 
 ## Why there are no prices
 
