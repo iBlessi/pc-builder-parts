@@ -14,8 +14,9 @@ our numbers.
 A single file, [`pc-builder-parts.json`](pc-builder-parts.json) — 126 parts:
 
 - `cpu`, `gpu`, `motherboard`, `ram`, `storage`, `psu`, `case` — arrays of parts. Each entry has its
-  specs, a performance tier, use-cases, a short `notes` line, a `source` URL for its specification
-  page, and a `last_verified` date.
+  specs, a performance tier, use-cases, a short `notes` line and a `last_verified` date. The 97 rows
+  added in the 2026-07-29 expansion also carry a `source` URL for their specification page; the 29
+  earlier rows predate that field.
 - `_meta.compatibility_rules` — the rules the builder enforces: socket match, chipset support, RAM
   type, PSU headroom (sum of CPU TDP + GPU TGP + 150 W system overhead, with a 20% margin), case
   GPU-length clearance, and storage interface fit.
@@ -74,8 +75,8 @@ unchanged and remain individually verifiable.
 
 ## How specs and tiers are sourced
 
-Specifications come from manufacturer product pages, TechPowerUp, and Tom's Hardware, each row
-carrying a `source` URL and a `last_verified` date. Performance tiers are TechFuelHQ editorial
+Specifications come from manufacturer product pages, TechPowerUp, and Tom's Hardware. Every row
+carries a `last_verified` date, and the 97 expansion rows also carry a `source` URL. Performance tiers are TechFuelHQ editorial
 assessments from aggregate review consensus — **not** first-party benchmarks, except where a part is
 anchored to a TechFuelHQ Open Bench Dataset (called out in that part's `notes`). The list is
 deliberately curated, not exhaustive: every entry earns its place via the `notes` line.
